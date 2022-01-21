@@ -1,0 +1,180 @@
+.entry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: #000000b3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    z-index: 5;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    &__close {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        font-size: 60px;
+        color: $white;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;  
+        @include max767 {
+            top: 20px;
+            right: 20px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(25, 66, 64, 0.9);
+        width: 95%;
+        max-width: 500px;
+        min-height: 575px;
+        border-radius: 8px;
+        padding: 40px;
+        @include max767 {
+            max-width: none;
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+        }
+        @include max480 {
+            padding: 20px;
+        }
+    }
+    &__logo {
+        width: 120px;
+        height: 30px;
+        margin-bottom: 40px;
+    }
+    &__actions {
+        display: flex;
+        align-items: center;
+    }
+    &__text {
+        font-size: 24px;
+        line-height: 30px;
+        color: $white;
+        text-align: center;
+        @include max480 {
+            font-size: 18px;
+        }
+    }
+    &__toggle {
+        position: relative;
+        background-color: $white;
+        border: none;
+        border-radius: 8px;
+        width: 80px;
+        height: 10px;
+        cursor: pointer;
+        margin: 0 20px 0 20px;
+        &.active {
+            .entry__checkbox {
+                transform: translateX(60px) rotate(-180deg);
+            }
+        }
+    }
+    &__checkbox {
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        background-color: $green-dark;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        transition: all 0.7s;
+    }
+    &__login ,
+    &__register {
+        display: none;
+        text-align: center;
+        margin-top: auto;
+        @include max767 {
+            margin-top: 40px;
+        }
+    }
+    &__login.active ,
+    &__register.active {
+        display: block;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        background-color: $white;
+        border-radius: 8px;
+        margin: 10px 0;
+        padding: 20px;
+        @include max480 {
+            padding: 10px;
+        }
+    }
+    &__icon {
+        width: 24px;
+        height: auto;
+        margin-right: 12px;
+        @include max480 {
+            width: 18px;
+        }
+    }
+    &__input {
+        font-size: 20px;
+        line-height: 24px;
+        width: 300px;
+        border: none;
+        outline: none;
+        @include max480 {
+            font-size: 16px;
+            line-height: 18px;
+            width: auto;
+            min-width: 0;
+        }
+    }
+    &__submit {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        color: $black;
+        background-color: $white;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        margin-top: 20px;
+        transition: all 0.5s;
+        text-decoration: none;
+        transition: all 0.5s;
+        &:hover {
+            color: $white;
+            background-color: $green;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    &__recovery {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 20px;
+        color: $white;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        padding-top: 20px;
+        transition: all 0.3s;
+        &:hover {
+            border-color: $white;
+        }
+    }
+}

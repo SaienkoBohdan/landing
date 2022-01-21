@@ -1,0 +1,113 @@
+.footer {
+    background-color: $green-dark;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        padding: 96px 0 75px 0;
+        border-bottom: 1px solid $gray-lite;
+        @include max991 {
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 20px 0;
+        }
+        @include max480 {
+            display: block;
+            text-align: center;
+        }
+        @include max767 {
+            text-align: center;
+        }
+    }
+    &__meaning {
+        @include max991 {
+            grid-column: 1/4;
+            margin-bottom: 40px;
+        }
+    }
+    &__column:not(:last-child) {
+        @include max767 {
+            margin-bottom: 40px;
+        }
+    }
+    &__text {
+        max-width: 342px;
+        font-size: 14px;
+        line-height: 24px;
+        color: $white;
+        padding-top: 55px;
+        @include max767 {
+            max-width: none;
+        }
+    }
+    &__chapter {
+        font-size: 14px;
+        line-height: 21px;
+        color: $white;
+        list-style: none;
+        margin-bottom: 24px;
+        @include max767 {
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+    &__item {
+        list-style: none;
+        margin-bottom: 12px;
+    }
+    &__link {
+        font-size: 14px;
+        line-height: 21px;
+        color: $gray-lite;
+        text-decoration: none;
+        text-align: center;
+        border-bottom: 1px solid transparent;
+        transition: all 0.5s;
+        padding-bottom: 3px;
+        &:hover {
+            border-bottom: 1px solid $white;
+        }
+    }
+    &__under {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0;
+        @include max560 {
+            display: block;
+            text-align: center;
+        }
+    }
+    &__copyright {
+        font-size: 14px;
+        line-height: 21px;
+        color: $gray;
+    }
+    &__block {
+        display: flex;
+        @include max560 {
+            display: block;
+        }
+    }
+    &__number {
+        font-size: 12px;
+        line-height: 21px;
+        color: $gray;
+        @include max560 {
+            margin: 20px 0;
+        }
+    }
+    &__networks {
+        margin-left: 17px;
+        &:first-of-type {
+            @include max560 {
+                margin: 0;
+            }
+        }
+    }
+    &__img {
+        width: 21px;
+        height: auto;
+        transition: all 0.3s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="scss\style.css">
+    <title>Landing</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="#">
+                    <img class="header__logo-img" src="images\HeaderLogo.svg" alt="HeaderLogo">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__menu menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Why Landing</a>
+                            <img class="menu__vector" src="images\Vector.svg" alt="Vector">
+                            <ul class="menu__sub-menu sub-menu">
+                                <li class="sub-menu__item">
+                                    <a class="sub-menu__link" href="#">Item1</a>
+                                    <a class="sub-menu__link" href="#">Item2</a>
+                                    <a class="sub-menu__link" href="#">Item3</a>
+                                    <a class="sub-menu__link" href="#">Item4</a>
+                                    <a class="sub-menu__link" href="#">Item5</a>
+                                    <a class="sub-menu__link" href="#">Item6</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Resources</a>
+                            <img class="menu__vector" src="images\Vector.svg" alt="Vector">
+                            <ul class="menu__sub-menu sub-menu">
+                                <li class="sub-menu__item">
+                                    <a class="sub-menu__link" href="#">Item1</a>
+                                    <a class="sub-menu__link" href="#">Item2</a>
+                                    <a class="sub-menu__link" href="#">Item3</a>
+                                    <a class="sub-menu__link" href="#">Item4</a>
+                                    <a class="sub-menu__link" href="#">Item5</a>
+                                    <a class="sub-menu__link" href="#">Item6</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="entrance">
+                        <a class="entrance__open" href="">Sign in</a>
+                    </div>
+                    <button class="header__close">
+                        &times;
+                    </button>
+                </nav>
+                <button class="header__burger">
+                    <svg width="30" height="30" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="hero__col-left">
+                        <div class="hero__text">
+                            <h2 class="hero__title">We’re reinventing apartment living</h2>
+                            <p class="hero__subtitle">
+                                Say goodbye to being trapped in a lease.
+                                Landing members have access to thousands
+                                of apartments with flexible leases.
+                            </p>
+                        </div>
+                        <div class="hero__search-wrapper">
+                            <div class="hero__search search">
+                                <div class="search__col">
+                                    <label class="search__row">
+                                        <p class="search__text">Location</p>
+                                        <input class="search__placeholder" name="name" type="text" placeholder="Where to?">
+                                    </label>
+                                </div>
+                                <div class="search__col">
+                                    <label class="search__row">
+                                        <p class="search__text">Dates</p>
+                                        <input class="search__placeholder" name="name" type="text" placeholder="How long?">
+                                    </label>
+                                </div>
+                                <a class="search__button" href="#">
+                                    <img class="search__icon" src="images\SearchIcon.svg" alt="SearchIcon">
+                                    <span class="search__link">Search</span>
+                                </a>
+                            </div>       
+                        </div>   
+                    </div>
+                    <div class="hero__col-right">
+                        <img class="hero__img" src="images\HeroImg.jpg" alt="HeroImg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits__inner">
+                    <div class="benefits__text">
+                        <p class="benefits__title">Unlock life with your</p>
+                        <h2 class="benefits__subtitle">Landing Membership</h2>
+                        <p class="benefits__membership">$199 Annual Membership</p>
+                    </div>
+                    <div class="benefits__more">
+                        <a class="benefits__link" href="#">
+                            <span class="benefits__span">Benefits More</span>
+                            <img class="benefits__arrow" src="images\Arrow.svg" alt="Arrow">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <div class="column__benefit">
+                            <img class="column__img" src="images\Column1.svg" alt="Column1">
+                            <h2 class="column__title">Lease how you want</h2>
+                            <p class="column__subtitle">Stay between one and 12+ months with the ability to transfer to other homes in the Landing network.</p>
+                        </div>
+                        <div class="column__benefit">
+                            <img class="column__img" src="images\Column2.svg" alt="Column2">
+                            <h2 class="column__title">Bounce around or stay put</h2>
+                            <p class="column__subtitle">We're always expanding our network to give you the best selection and options.</p>
+                        </div>
+                        <div class="column__benefit">
+                            <img class="column__img" src="images\Column3.svg" alt="Column3">
+                            <h2 class="column__title">Keep cash in your pocket</h2>
+                            <p class="column__subtitle">No application fees or security deposit.</p>
+                        </div>
+                        <div class="column__benefit">
+                            <img class="column__img" src="images\Column4.svg" alt="Column4">
+                            <h2 class="column__title">Enjoy guaranteed peace of mind</h2>
+                            <p class="column__subtitle">If you’re not completely satisfied in your first week, we’ll make it right.</p>
+                        </div>
+                        <div class="column__benefit">
+                            <img class="column__img" src="images\Column5.svg" alt="Column5">
+                            <h2 class="column__title">Get up to 7 free travel days</h2>
+                            <p class="column__subtitle">Stay with Landing on your next trip. Get up to 7 free days every year.</p>
+                        </div>
+                        <div class="column__benefit">
+                            <img class="column__img" src="images\Column6.svg" alt="Column6">
+                            <h2 class="column__title">Rest easy with 24/7 member support</h2>
+                            <p class="column__subtitle">Questions can come up anytime, so we’re always available to help.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="explorer">
+            <div class="container">
+                <div class="explorer__inner">
+                    <div class="explorer__cities">
+                        <img class="explorer__pics" src="images\Cities.png" alt="Cities">
+                    </div>
+                    <div class="explorer__topic">
+                        <h2 class="explorer__heading">Get the best rates and even more freedom with Landing Explorer</h2>
+                        <div class="explorer__item">
+                            <img class="explorer__point" src="images\Point1.svg" alt="Point1">
+                            <div class="explorer__wrap">
+                                <h2 class="explorer__title">Best Rates</h2>
+                                <p class="explorer__subtitle">Explorer members always get our lowest monthly rates.</p>
+                            </div>
+                        </div>
+                        <div class="explorer__item">
+                            <img class="explorer__point" src="images\Point2.svg" alt="Point2">
+                            <div class="explorer__wrap">
+                                <h2 class="explorer__title">Ultimate Flexibility</h2>
+                                <p class="explorer__subtitle">When you’re ready for something new, simply give a 30-day notice; there’s no lease to break or transfer fees.</p>
+                            </div>
+                        </div>
+                        <div class="explorer__item">
+                            <img class="explorer__point" src="images\Point3.svg" alt="Point3">
+                            <div class="explorer__wrap">
+                                <h2 class="explorer__title">Easy Transfers</h2>
+                                <p class="explorer__subtitle">Seamlessly move between Landing apartments anywhere, anytime.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="finding">
+            <div class="container">
+                <div class="finding__inner">
+                    <div class="finding__text">
+                        <p class="finding__subtitle">Landing Furnished</p>
+                        <h2 class="finding__title">Enjoy all the amenities of a fully furnished Landing home</h2>
+                    </div>
+                    <div class="finding__slider slider">
+                        <div class="slider__wrapper swiper-wrapper">
+                            <div class="slider__slide swiper-slide">
+                                <img class="slider__img" src="images\Slide.jpg" alt="Slide1">
+                                <div class="slider__content">
+                                    <img class="slider__icon" src="images\Icon.svg" alt="Icon">
+                                    <p class="slider__text">Grand Flats , Saint Louis</p>
+                                </div>
+                            </div>
+                            <div class="slider__slide swiper-slide">
+                                <img class="slider__img" src="images\Slide.jpg" alt="Slide2">
+                                <div class="slider__content">
+                                    <img class="slider__icon" src="images\Icon.svg" alt="Icon">
+                                    <p class="slider__text">Grand Flats , Saint Louis</p>
+                                </div>
+                            </div>
+                            <div class="slider__slide swiper-slide">
+                                <img class="slider__img" src="images\Slide.jpg" alt="Slide3">
+                                <div class="slider__content">
+                                    <img class="slider__icon" src="images\Icon.svg" alt="Icon">
+                                    <p class="slider__text">Grand Flats , Saint Louis</p>
+                                </div>
+                            </div>
+                            <div class="slider__slide swiper-slide">
+                                <img class="slider__img" src="images\Slide.jpg" alt="Slide4">
+                                <div class="slider__content">
+                                    <img class="slider__icon" src="images\Icon.svg" alt="Icon">
+                                    <p class="slider__text">Grand Flats , Saint Louis</p>
+                                </div>
+                            </div>
+                            <div class="slider__slide swiper-slide">
+                                <img class="slider__img" src="images\Slide.jpg" alt="Slide5">
+                                <div class="slider__content">
+                                    <img class="slider__icon" src="images\Icon.svg" alt="Icon">
+                                    <p class="slider__text">Grand Flats , Saint Louis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__navigation">
+                            <div class="slider__arrows">
+                                <button class="slider__arrow slider__arrow--prev">
+                                    <img class="slider__arrow-svg" src="images\ArrowPrev.svg" alt="ArrowPrev">
+                                </button>
+                                <button class="slider__arrow slider__arrow--next">
+                                    <img class="slider__arrow-svg" src="images\ArrowNext.svg" alt="ArrowNext">
+                                </button>
+                            </div>
+                            <div class="slider__scrollbar swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                    <p class="finding__content">Every Landing includes</p>
+                    <div class="finding__cards">
+                        <div class="finding__card">
+                            <img class="finding__img" src="images\Card1.jpg" alt="Card1">
+                            <p class="finding__img-subtitle">Comfy, in-house designed furnishings</p>
+                        </div>
+                        <div class="finding__card">
+                            <img class="finding__img" src="images\Card2.jpg" alt="Card2">
+                            <p class="finding__img-subtitle">Luxury mattress and linens</p>
+                        </div>
+                        <div class="finding__card">
+                            <img class="finding__img" src="images\Card3.jpg" alt="Card3">
+                            <p class="finding__img-subtitle">A fully-equipped kitchen</p>
+                        </div>
+                        <div class="finding__card">
+                            <img class="finding__img" src="images\Card4.jpg" alt="Card4">
+                            <p class="finding__img-subtitle">Dedicated workspaces</p>
+                        </div>
+                        <div class="finding__card">
+                            <img class="finding__img" src="images\Card5.jpg" alt="Card5">
+                            <p class="finding__img-subtitle">Smart TV + Wifi</p>
+                        </div>
+                        <div class="finding__card">
+                            <img class="finding__img" src="images\Card6.jpg" alt="Card6">
+                            <p class="finding__img-subtitle">Premium toiletries</p>
+                        </div>
+                        <div class="finding__card">
+                            <img class="finding__img" src="images\Card7.jpg" alt="Card7">
+                            <p class="finding__img-subtitle">Plenty of storage</p>
+                        </div>
+                        <div class="finding__card">
+                            <img class="finding__img" src="images\Card8.jpg" alt="Card8">
+                            <p class="finding__img-subtitle">Thoughtful finishing touches</p>
+                        </div>
+                    </div>
+                    <img class="finding__item" src="images\FindingItem.svg" alt="FindingItem">
+                </div>
+            </div>
+        </section>
+        <section class="comment">
+            <div class="container">
+                <div class="comment__inner">
+                    <h2 class="comment__content">See what our members have to say</h2>
+                    <div class="comment__wrapper">
+                        <div class="comment__block">
+                            <div class="comment__rating">
+                                <img class="comment__star" src="images\Star.svg" alt="">
+                                <img class="comment__star" src="images\Star.svg" alt="">
+                                <img class="comment__star" src="images\Star.svg" alt="">
+                                <img class="comment__star" src="images\Star.svg" alt="">
+                                <img class="comment__star" src="images\Star.svg" alt="">
+                            </div>
+                            <h2 class="comment__title">Waseem A.</h2>
+                            <p class="comment__subtitle">Fort Lauderdale , FL</p>
+                            <p class="comment__text">Even on the conservative side, apartment buildings expect a three-month minimum (lease)... If they do offer month-to-month, it’s often as much as twice the rental price, and it’s incredibly annoying to furnish a place if you’re only going to live there for a month.</p>
+                        </div>
+                        <div class="comment__block">
+                            <div class="comment__rating">
+                                <img class="comment__star" src="images\Star.svg" alt="">
+                                <img class="comment__star" src="images\Star.svg" alt="">
+                                <img class="comment__star" src="images\Star.svg" alt="">
+                                <img class="comment__star" src="images\Star.svg" alt="">
+                                <img class="comment__star" src="images\Star.svg" alt="">
+                            </div>
+                            <h2 class="comment__title">Michael H.</h2>
+                            <p class="comment__subtitle">Tampa , FL</p>
+                            <p class="comment__text">Landing’s apartments have everything under the sun. When we arrived, we brought things that we thought Landing wouldn’t know we needed. But they had it – so now we have two of everything.</p>
+                        </div>
+                        <div class="comment__block">
+                            <div class="comment__rating">
+                                <img class="comment__star" src="images\Star.svg" alt="">
+                                <img class="comment__star" src="images\Star.svg" alt="">
+                                <img class="comment__star" src="images\Star.svg" alt="">
+                                <img class="comment__star" src="images\Star.svg" alt="">
+                                <img class="comment__star" src="images\Star.svg" alt="">
+                            </div>
+                            <h2 class="comment__title">Daniel O.</h2>
+                            <p class="comment__subtitle">Nashville , TN</p>
+                            <p class="comment__text">The biggest perk is the flexibility, the fact that if I want to live anywhere from Nashville to Seattle, Austin to New York City, I have a way to do it. Landing makes the world accessible in a way that it wasn’t before.</p>
+                        </div>
+                    </div>
+                    <div class="comment__brands">
+                        <img class="comment__brand" src="images\Brand1.svg" alt="Brand">
+                        <img class="comment__brand" src="images\Brand2.svg" alt="Brand">
+                        <img class="comment__brand" src="images\Brand3.svg" alt="Brand">
+                        <img class="comment__brand" src="images\Brand4.svg" alt="Brand">
+                        <img class="comment__brand" src="images\Brand5.svg" alt="Brand">
+                        <img class="comment__brand" src="images\Brand6.svg" alt="Brand">
+                    </div>
+                    <div class="comment__label">
+                        <img class="comment__object" src="images\Object.svg" alt="Object">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cities">
+            <div class="container">
+                <div class="cities__inner">
+                    <div class="cities__text">
+                        <h2 class="cities__title">See where members love to live</h2>
+                        <p class="cities__subtitle">We offer over 80 cities, and counting, across the U.S. and encourage you to explore with our free, 7-day travel benefit.</p>
+                    </div>
+                    <div class="cities__slider slider">
+                        <div class="slider__wrapper swiper-wrapper">
+                            <div class="slider__slide--city swiper-slide">
+                                <img class="slider__img" src="images\Austin.jpg" alt="Austin">
+                                <div class="slider__content">
+                                    <p class="slider__text">Austin</p>
+                                </div>
+                            </div>
+                            <div class="slider__slide--city swiper-slide">
+                                <img class="slider__img" src="images\Denver.jpg" alt="Denver">
+                                <div class="slider__content">
+                                    <p class="slider__text">Denver</p>
+                                </div>
+                            </div>
+                            <div class="slider__slide--city swiper-slide">
+                                <img class="slider__img" src="images\Phoenix.jpg" alt="Phoenix">
+                                <div class="slider__content">
+                                    <p class="slider__text">Phoenix</p>
+                                </div>
+                            </div>
+                            <div class="slider__slide--city swiper-slide">
+                                <img class="slider__img" src="images\Atlanta.jpg" alt="Atlanta">
+                                <div class="slider__content">
+                                    <p class="slider__text">Atlanta</p>
+                                </div>
+                            </div>
+                            <div class="slider__slide--city swiper-slide">
+                                <img class="slider__img" src="images\Baltimore.jpg" alt="Baltimore">
+                                <div class="slider__content">
+                                    <p class="slider__text">Baltimore</p>
+                                </div>
+                            </div>
+                            <div class="slider__slide--city swiper-slide">
+                                <img class="slider__img" src="images\Richmond.jpg" alt="Richmond">
+                                <div class="slider__content">
+                                    <p class="slider__text">Richmond</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__navigation">
+                            <div class="slider__arrows">
+                                <button class="slider__arrow slider__arrow--prev">
+                                    <img class="slider__arrow-svg" src="images\ArrowPrev.svg" alt="ArrowPrev">
+                                </button>
+                                <button class="slider__arrow slider__arrow--next">
+                                    <img class="slider__arrow-svg" src="images\ArrowNext.svg" alt="ArrowNext">
+                                </button>
+                            </div>
+                            <div class="slider__scrollbar swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                    <p class="cities__more">More of our favorite cities</p>
+                    <ul class="cities__list">
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Miami</h4>
+                                <p class="cities__state">Florida</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Fort Lauderdale</h4>
+                                <p class="cities__state">Florida</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Salt Lake City</h4>
+                                <p class="cities__state">Utah</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">San Francisco</h4>
+                                <p class="cities__state">California</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Chicago</h4>
+                                <p class="cities__state">Illinois</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Boston</h4>
+                                <p class="cities__state">Massachusetts</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Los Angeles</h4>
+                                <p class="cities__state">California</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Charleston</h4>
+                                <p class="cities__state">South Carolina</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">New York</h4>
+                                <p class="cities__state">New York</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Phoenix</h4>
+                                <p class="cities__state">Arizona</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Las Vegas</h4>
+                                <p class="cities__state">Nevada</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Orlando</h4>
+                                <p class="cities__state">Florida</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">St. Petersburg</h4>
+                                <p class="cities__state">Florida</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Portland</h4>
+                                <p class="cities__state">Oregon</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Washington</h4>
+                                <p class="cities__state">D.C.</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Baltimore</h4>
+                                <p class="cities__state">Maryland</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Fort Worth</h4>
+                                <p class="cities__state">Texas</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Richmond</h4>
+                                <p class="cities__state">Virginia</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Boulder</h4>
+                                <p class="cities__state">Colorado</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Charlotte</h4>
+                                <p class="cities__state">North Carolina</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Philadelphia</h4>
+                                <p class="cities__state">Pennsylvania</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Oklahoma City</h4>
+                                <p class="cities__state">Oklahoma</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Tampa</h4>
+                                <p class="cities__state">Florida</p>
+                            </a>
+                        </li>
+                        <li class="cities__item">
+                            <a class="cities__link" href="#">
+                                <h4 class="cities__city">Nashville</h4>
+                                <p class="cities__state">Tennessee</p>    
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="cities__btn" href="#">View All Cities</a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__wrapper">
+                        <div class="footer__meaning"> 
+                            <p class="footer__text">Landing is a network of furnished apartments for rent across the country.</p>
+                        </div>
+                        <ul class="footer__column">
+                            <li class="footer__chapter">Cities</li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Austin</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Birmingham</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Boston</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Chicago</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Dallas</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__column">
+                            <li class="footer__chapter">Landing</li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Member Benefits</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Blog</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">About</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Refer a Friend</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Become a Host</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Become a Partner</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Careers</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__column">
+                            <li class="footer__chapter">Support</li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Contact Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">FAQ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Terms of Service</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__under">
+                        <p class="footer__copyright">© Landing 2021. All rights reserved.</p>
+                        <div class="footer__block">
+                            <p class="footer__number">415-231-1701</p>
+                            <a class="footer__networks" href="#">
+                                <img class="footer__img" src="images\Twitter.svg" alt="Twitter">
+                            </a>
+                            <a class="footer__networks" href="#">
+                                <img class="footer__img" src="images\Instagram.svg" alt="Instagram">
+                            </a>
+                            <a class="footer__networks" href="#">
+                                <img class="footer__img" src="images\Facebook.svg" alt="Facebook">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </main>
+
+    <div class="entry">
+        <button class="entry__close">
+            &times;
+        </button>
+        <div class="entry__wrapper">
+            <img class="entry__logo" src="images\FormLogo.svg" alt="FormLogo">
+            <div class="entry__actions"> 
+                <h2 class="entry__text">Sign In</h2>
+                <button class="entry__toggle"><span class="entry__checkbox"><img class="entry__arrow" src="images\ArrowCheckbox.svg" alt="ArrowCheckbox"></span></button>
+                <h2 class="entry__text">Sign Up</h2>
+            </div>
+            <div class="entry__login active">
+                <form class="entry__form" action="#">
+                    <div class="entry__inner">
+                        <label class="entry__row">
+                            <img class="entry__icon" src="images\Email.svg" alt="Email">
+                            <input class="entry__input" name="email" type="text" placeholder="Name">
+                        </label>
+                        <label class="entry__row">
+                            <img class="entry__icon" src="images\Password.svg" alt="Password">
+                            <input class="entry__input" name="password" type="text" placeholder="Password">
+                        </label>
+                    </div>
+                    <input class="entry__submit" type="submit" value="Submit">
+                </form>
+                <a class="entry__recovery" href="#">Forgot your password?</a>
+            </div>
+            <div class="entry__register">
+                <form class="entry__form" action="#">
+                    <div class="entry__inner">
+                        <label class="entry__row">
+                            <img class="entry__icon" src="images\Name.svg" alt="Name">
+                            <input class="entry__input" name="name" type="text" placeholder="Name">
+                        </label>
+                        <label class="entry__row">
+                            <img class="entry__icon" src="images\Password.svg" alt="Password">
+                            <input class="entry__input" name="email" type="text" placeholder="Email">
+                        </label>
+                        <label class="entry__row">
+                            <img class="entry__icon" src="images\Email.svg" alt="Email">
+                            <input class="entry__input" name="password" type="text" placeholder="Password">
+                        </label>
+                    </div>
+                    <input class="entry__submit" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js" ></script>
+</body>
+</html>
