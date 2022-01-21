@@ -16,6 +16,9 @@ const swiperFinding = new Swiper('.finding__slider', {
     loop: false,
     slidesPerView: 1.3,
     spaceBetween: 20,
+    mousewheel: {
+        invert: false,
+    },
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -40,6 +43,9 @@ const swiperCities = new Swiper('.cities__slider', {
     loop: false,
     slidesPerView: 4,
     spaceBetween: 24,
+    mousewheel: {
+        invert: false,
+    },
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -60,7 +66,6 @@ const swiperCities = new Swiper('.cities__slider', {
     },
     });
     
-
     const openEntrance = document.querySelectorAll('.entrance__open');
     const closeEntry = document.querySelectorAll('.entry__close');
     const entry = document.querySelector('.entry');
